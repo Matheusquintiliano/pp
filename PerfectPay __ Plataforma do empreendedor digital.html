@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)https://app.perfectpay.com.br/ -->
+<html lang="br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="Cache-Control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <meta name="csrf-token" content="Tw2wrVTX7e09eLTzzzkF5z5MZcqLCCzYNctMl3W8">
+    <title>PerfectPay :: Plataforma do empreendedor digital</title>
+    <link href="https://app.perfectpay.com.br/img/perfectpay/favicon.png" rel="icon" type="image/png">
+    <link href="./PerfectPay __ Plataforma do empreendedor digital_files/all.css" rel="stylesheet" type="text/css">
+    <link href="./PerfectPay __ Plataforma do empreendedor digital_files/app.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./PerfectPay __ Plataforma do empreendedor digital_files/default.css">
+    <link href="./PerfectPay __ Plataforma do empreendedor digital_files/select2.min.css" rel="stylesheet" type="text/css">
+    <link href="./PerfectPay __ Plataforma do empreendedor digital_files/daterangepicker.css" rel="stylesheet" type="text/css">
+    <link href="./PerfectPay __ Plataforma do empreendedor digital_files/css2" rel="stylesheet" type="text/css">
+    <link rel="manifest" href="https://app.perfectpay.com.br/manifest.json">
+    <meta name="theme-color" content="#005B71FF">
+    <link rel="apple-touch-icon" href="https://app.perfectpay.com.br/img/perfectpay/icons/icon-512x512.png">
+    <link rel="apple-touch-startup-image" href="https://app.perfectpay.com.br/img/perfectpay/icons/icon-512x512.png">
+    <meta name="PerfectPay" content="AppTitle">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <style>
+        .dataTables_wrapper .dataTables_paginate span a.paginate_button,
+        .dataTables_wrapper .dataTables_paginate .paginate_button.previous,
+        .dataTables_wrapper .dataTables_paginate .paginate_button.next {
+            padding: 4px 12px;
+            border-radius: 4px !important;
+            color: #222F3E;
+            background: #FFFFFF;
+            border: 1px solid #C2C2C2 !important;
+            margin: 0 4px;
+            cursor: pointer;
+        }
+        .dataTables_wrapper .dataTables_paginate span a.paginate_button:hover,
+        .dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover,
+        .dataTables_wrapper .dataTables_paginate .paginate_button.next:hover {
+            background: #F2F2F2 !important;
+            color: #000000 !important;
+        }
+        .dataTables_wrapper .dataTables_paginate span a.paginate_button.current,
+        .dataTables_wrapper .dataTables_paginate span a.paginate_button.current:hover {
+            z-index: 3;
+            color: #FFFFFF !important;
+            background: var(--secondary) !important;
+        }
+    </style>
+        <style>
+        .card-stats-green {
+            background: linear-gradient(87deg, var(--pay-green) 0, var(--pay-blue) 100%) !important;
+            color: #FFFFFF;
+        }
+        .cardInformation {
+            margin: -10px;
+        }
+        .cardInformation h3 {
+            font-size: 18px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .cardInformation h1 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .cardInformation p {
+            font-size: 18px;
+        }
+        .cardInformation .row {
+            margin: 1%;
+        }
+        .header {
+            margin-bottom: 0;
+            padding: 1.25rem 1.5rem;
+            border-bottom: 1px solid rgba(0, 0, 0, .05);
+            font-weight: 600;
+        }
+        #accordionProductRanking [data-toggle="collapse"] .fa:before {
+            content: "\f139";
+        }
+        #accordionProductRanking [data-toggle="collapse"].collapsed .fa:before {
+            content: "\f13a";
+        }
+        .campaigns .modal-content {
+            background-color: transparent !important;
+        }
+        /*css do ShareMesages (\Painel\Home\Partials\Messages.blade.php)*/
+        .list-group-messages li:not(:last-child) {
+            border-bottom: 0.5px solid #C2C2C2 !important;
+        }
+        .list-group-messages li .social-media-content {
+            min-width: 150px;
+            max-width: 150px;
+        }
+        .legend {
+            float: left;
+            margin-top: 15px;
+            font-size: 11px;
+        }
+        .legend .line--green,
+        .legend .line--gray {
+            display: block;
+        }
+        .legend .line--green::before {
+            content: "";
+            height: 8px;
+            width: 30px;
+            background: #22b792;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .legend .line--gray::before {
+            content: "";
+            height: 8px;
+            width: 30px;
+            background: #9eb2bb;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+    <style>
+        .quick-access-card {
+            margin-top: 16px;
+        }
+        @media (min-width: 992px) {
+            .col-quick-access:after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 52px;
+                height: calc(100% - 52px);
+                border-right: 1px solid #D4D5D6;
+            }
+        }
+        #accordionProductRanking .rotate-icon {
+            right: 15px;
+            transition: all 0.3s ease;
+        }
+        #accordionProductRanking a.collapsed .rotate-icon {
+            transform: rotate(180deg);
+        }
+        #collapseProductRanking .list-group-item {
+            border: unset !important;
+        }
+        #collapseProductRanking .list-group-item:not(:last-child) {
+            border-bottom: 0.5px solid #C2C2C2 !important;
+        }
+        #collapseProductRanking .card-body {
+            max-height: 350px;
+        }
+        .div-icon-holder {
+            flex-wrap: wrap;
+        }
+        .icon-holder {
+            font-size: 22px;
+            padding: 3px;
+            height: 30px;
+            width: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+        .icon-holder:not(:last-child) {
+            margin-right: 10px;
+        }
+        .icon-holder:hover {
+            filter: opacity(.5);
+        }
+    </style>
+    <style>
+        #rowResume .resume-body {
+            min-height: 0 !important;
+            padding: 1rem;
+            opacity: 1;
+            pointer-events: visible;
+            z-index: 0;
+            height: 100%;
+            transition: 0.2s;
+        }
+        #rowResume .resume-body.hide {
+            height: 0;
+            padding: 0;
+            opacity: 0;
+            pointer-events: none;
+            z-index: -1000;
+            border-top-width: 0;
+        }
+
+        #rowResume .card-text {
+            transition: all 0.3s;
+        }
+    </style>
+<style type="text/css" id="operaUserStyle"></style><style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style><style>@-webkit-keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@-webkit-keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@-webkit-keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@-webkit-keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}@keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}body.swal2-toast-shown .swal2-container{position:fixed;background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-shown{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}body.swal2-toast-column .swal2-toast{flex-direction:column;align-items:stretch}body.swal2-toast-column .swal2-toast .swal2-actions{flex:1;align-self:stretch;height:2.2em;margin-top:.3125em}body.swal2-toast-column .swal2-toast .swal2-loading{justify-content:center}body.swal2-toast-column .swal2-toast .swal2-input{height:2em;margin:.3125em auto;font-size:1em}body.swal2-toast-column .swal2-toast .swal2-validation-message{font-size:1em}.swal2-popup.swal2-toast{flex-direction:row;align-items:center;width:auto;padding:.625em;box-shadow:0 0 .625em #d9d9d9;overflow-y:hidden}.swal2-popup.swal2-toast .swal2-header{flex-direction:row}.swal2-popup.swal2-toast .swal2-title{flex-grow:1;justify-content:flex-start;margin:0 .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{position:initial;width:.8em;height:.8em;line-height:.8}.swal2-popup.swal2-toast .swal2-content{justify-content:flex-start;font-size:1em}.swal2-popup.swal2-toast .swal2-icon{width:2em;min-width:2em;height:2em;margin:0}.swal2-popup.swal2-toast .swal2-icon-text{font-size:2em;font-weight:700;line-height:1em}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{height:auto;margin:0 .3125em}.swal2-popup.swal2-toast .swal2-styled{margin:0 .3125em;padding:.3125em .625em;font-size:1em}.swal2-popup.swal2-toast .swal2-styled:focus{box-shadow:0 0 0 .0625em #fff,0 0 0 .125em rgba(50,100,150,.4)}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:2em;height:2.8125em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.25em;left:-.9375em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:2em 2em;transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;-webkit-transform-origin:0 2em;transform-origin:0 2em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast.swal2-show{-webkit-animation:showSweetToast .5s;animation:showSweetToast .5s}.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:hideSweetToast .2s forwards;animation:hideSweetToast .2s forwards}.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-tip{-webkit-animation:animate-toast-success-tip .75s;animation:animate-toast-success-tip .75s}.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-long{-webkit-animation:animate-toast-success-long .75s;animation:animate-toast-success-long .75s}@-webkit-keyframes showSweetToast{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg);opacity:0}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg);opacity:.5}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg);opacity:.7}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0);opacity:1}}@keyframes showSweetToast{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg);opacity:0}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg);opacity:.5}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg);opacity:.7}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0);opacity:1}}@-webkit-keyframes hideSweetToast{0%{opacity:1}33%{opacity:.5}100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@keyframes hideSweetToast{0%{opacity:1}33%{opacity:.5}100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@-webkit-keyframes animate-toast-success-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes animate-toast-success-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@-webkit-keyframes animate-toast-success-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes animate-toast-success-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto!important}body.swal2-no-backdrop .swal2-shown{top:auto;right:auto;bottom:auto;left:auto;background-color:transparent}body.swal2-no-backdrop .swal2-shown>.swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}body.swal2-no-backdrop .swal2-shown.swal2-top{top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-top-left,body.swal2-no-backdrop .swal2-shown.swal2-top-start{top:0;left:0}body.swal2-no-backdrop .swal2-shown.swal2-top-end,body.swal2-no-backdrop .swal2-shown.swal2-top-right{top:0;right:0}body.swal2-no-backdrop .swal2-shown.swal2-center{top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-no-backdrop .swal2-shown.swal2-center-left,body.swal2-no-backdrop .swal2-shown.swal2-center-start{top:50%;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-center-end,body.swal2-no-backdrop .swal2-shown.swal2-center-right{top:50%;right:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-bottom{bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-bottom-left,body.swal2-no-backdrop .swal2-shown.swal2-bottom-start{bottom:0;left:0}body.swal2-no-backdrop .swal2-shown.swal2-bottom-end,body.swal2-no-backdrop .swal2-shown.swal2-bottom-right{right:0;bottom:0}.swal2-container{display:flex;position:fixed;top:0;right:0;bottom:0;left:0;flex-direction:row;align-items:center;justify-content:center;padding:10px;background-color:transparent;z-index:1060;overflow-x:hidden;-webkit-overflow-scrolling:touch}.swal2-container.swal2-top{align-items:flex-start}.swal2-container.swal2-top-left,.swal2-container.swal2-top-start{align-items:flex-start;justify-content:flex-start}.swal2-container.swal2-top-end,.swal2-container.swal2-top-right{align-items:flex-start;justify-content:flex-end}.swal2-container.swal2-center{align-items:center}.swal2-container.swal2-center-left,.swal2-container.swal2-center-start{align-items:center;justify-content:flex-start}.swal2-container.swal2-center-end,.swal2-container.swal2-center-right{align-items:center;justify-content:flex-end}.swal2-container.swal2-bottom{align-items:flex-end}.swal2-container.swal2-bottom-left,.swal2-container.swal2-bottom-start{align-items:flex-end;justify-content:flex-start}.swal2-container.swal2-bottom-end,.swal2-container.swal2-bottom-right{align-items:flex-end;justify-content:flex-end}.swal2-container.swal2-grow-fullscreen>.swal2-modal{display:flex!important;flex:1;align-self:stretch;justify-content:center}.swal2-container.swal2-grow-row>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-grow-column{flex:1;flex-direction:column}.swal2-container.swal2-grow-column.swal2-bottom,.swal2-container.swal2-grow-column.swal2-center,.swal2-container.swal2-grow-column.swal2-top{align-items:center}.swal2-container.swal2-grow-column.swal2-bottom-left,.swal2-container.swal2-grow-column.swal2-bottom-start,.swal2-container.swal2-grow-column.swal2-center-left,.swal2-container.swal2-grow-column.swal2-center-start,.swal2-container.swal2-grow-column.swal2-top-left,.swal2-container.swal2-grow-column.swal2-top-start{align-items:flex-start}.swal2-container.swal2-grow-column.swal2-bottom-end,.swal2-container.swal2-grow-column.swal2-bottom-right,.swal2-container.swal2-grow-column.swal2-center-end,.swal2-container.swal2-grow-column.swal2-center-right,.swal2-container.swal2-grow-column.swal2-top-end,.swal2-container.swal2-grow-column.swal2-top-right{align-items:flex-end}.swal2-container.swal2-grow-column>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal{margin:auto}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-container .swal2-modal{margin:0!important}}.swal2-container.swal2-fade{transition:background-color .1s}.swal2-container.swal2-shown{background-color:rgba(0,0,0,.4)}.swal2-popup{display:none;position:relative;flex-direction:column;justify-content:center;width:32em;max-width:100%;padding:1.25em;border-radius:.3125em;background:#fff;font-family:inherit;font-size:1rem;box-sizing:border-box}.swal2-popup:focus{outline:0}.swal2-popup.swal2-loading{overflow-y:hidden}.swal2-popup .swal2-header{display:flex;flex-direction:column;align-items:center}.swal2-popup .swal2-title{display:block;position:relative;max-width:100%;margin:0 0 .4em;padding:0;color:#595959;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}.swal2-popup .swal2-actions{flex-wrap:wrap;align-items:center;justify-content:center;margin:1.25em auto 0;z-index:1}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}.swal2-popup .swal2-actions.swal2-loading .swal2-styled.swal2-confirm{width:2.5em;height:2.5em;margin:.46875em;padding:0;border:.25em solid transparent;border-radius:100%;border-color:transparent;background-color:transparent!important;color:transparent;cursor:default;box-sizing:border-box;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-popup .swal2-actions.swal2-loading .swal2-styled.swal2-cancel{margin-right:30px;margin-left:30px}.swal2-popup .swal2-actions.swal2-loading :not(.swal2-styled).swal2-confirm::after{display:inline-block;width:15px;height:15px;margin-left:5px;border:3px solid #999;border-radius:50%;border-right-color:transparent;box-shadow:1px 1px 1px #fff;content:'';-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal}.swal2-popup .swal2-styled{margin:.3125em;padding:.625em 2em;font-weight:500;box-shadow:none}.swal2-popup .swal2-styled:not([disabled]){cursor:pointer}.swal2-popup .swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#3085d6;color:#fff;font-size:1.0625em}.swal2-popup .swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#aaa;color:#fff;font-size:1.0625em}.swal2-popup .swal2-styled:focus{outline:0;box-shadow:0 0 0 2px #fff,0 0 0 4px rgba(50,100,150,.4)}.swal2-popup .swal2-styled::-moz-focus-inner{border:0}.swal2-popup .swal2-footer{justify-content:center;margin:1.25em 0 0;padding:1em 0 0;border-top:1px solid #eee;color:#545454;font-size:1em}.swal2-popup .swal2-image{max-width:100%;margin:1.25em auto}.swal2-popup .swal2-close{position:absolute;top:0;right:0;justify-content:center;width:1.2em;height:1.2em;padding:0;transition:color .1s ease-out;border:none;border-radius:0;background:0 0;color:#ccc;font-family:serif;font-size:2.5em;line-height:1.2;cursor:pointer;overflow:hidden}.swal2-popup .swal2-close:hover{-webkit-transform:none;transform:none;color:#f27474}.swal2-popup>.swal2-checkbox,.swal2-popup>.swal2-file,.swal2-popup>.swal2-input,.swal2-popup>.swal2-radio,.swal2-popup>.swal2-select,.swal2-popup>.swal2-textarea{display:none}.swal2-popup .swal2-content{justify-content:center;margin:0;padding:0;color:#545454;font-size:1.125em;font-weight:300;line-height:normal;z-index:1;word-wrap:break-word}.swal2-popup #swal2-content{text-align:center}.swal2-popup .swal2-checkbox,.swal2-popup .swal2-file,.swal2-popup .swal2-input,.swal2-popup .swal2-radio,.swal2-popup .swal2-select,.swal2-popup .swal2-textarea{margin:1em auto}.swal2-popup .swal2-file,.swal2-popup .swal2-input,.swal2-popup .swal2-textarea{width:100%;transition:border-color .3s,box-shadow .3s;border:1px solid #d9d9d9;border-radius:.1875em;font-size:1.125em;box-shadow:inset 0 1px 1px rgba(0,0,0,.06);box-sizing:border-box}.swal2-popup .swal2-file.swal2-inputerror,.swal2-popup .swal2-input.swal2-inputerror,.swal2-popup .swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}.swal2-popup .swal2-file:focus,.swal2-popup .swal2-input:focus,.swal2-popup .swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:0 0 3px #c4e6f5}.swal2-popup .swal2-file::-webkit-input-placeholder,.swal2-popup .swal2-input::-webkit-input-placeholder,.swal2-popup .swal2-textarea::-webkit-input-placeholder{color:#ccc}.swal2-popup .swal2-file:-ms-input-placeholder,.swal2-popup .swal2-input:-ms-input-placeholder,.swal2-popup .swal2-textarea:-ms-input-placeholder{color:#ccc}.swal2-popup .swal2-file::-ms-input-placeholder,.swal2-popup .swal2-input::-ms-input-placeholder,.swal2-popup .swal2-textarea::-ms-input-placeholder{color:#ccc}.swal2-popup .swal2-file::placeholder,.swal2-popup .swal2-input::placeholder,.swal2-popup .swal2-textarea::placeholder{color:#ccc}.swal2-popup .swal2-range input{width:80%}.swal2-popup .swal2-range output{width:20%;font-weight:600;text-align:center}.swal2-popup .swal2-range input,.swal2-popup .swal2-range output{height:2.625em;margin:1em auto;padding:0;font-size:1.125em;line-height:2.625em}.swal2-popup .swal2-input{height:2.625em;padding:0 .75em}.swal2-popup .swal2-input[type=number]{max-width:10em}.swal2-popup .swal2-file{font-size:1.125em}.swal2-popup .swal2-textarea{height:6.75em;padding:.75em}.swal2-popup .swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;color:#545454;font-size:1.125em}.swal2-popup .swal2-checkbox,.swal2-popup .swal2-radio{align-items:center;justify-content:center}.swal2-popup .swal2-checkbox label,.swal2-popup .swal2-radio label{margin:0 .6em;font-size:1.125em}.swal2-popup .swal2-checkbox input,.swal2-popup .swal2-radio input{margin:0 .4em}.swal2-popup .swal2-validation-message{display:none;align-items:center;justify-content:center;padding:.625em;background:#f0f0f0;color:#666;font-size:1em;font-weight:300;overflow:hidden}.swal2-popup .swal2-validation-message::before{display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center;content:'!';zoom:normal}@supports (-ms-accelerator:true){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@-moz-document url-prefix(){.swal2-close:focus{outline:2px solid rgba(50,100,150,.4)}}.swal2-icon{position:relative;justify-content:center;width:5em;height:5em;margin:1.25em auto 1.875em;border:.25em solid transparent;border-radius:50%;line-height:5em;cursor:default;box-sizing:content-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;zoom:normal}.swal2-icon-text{font-size:3.75em}.swal2-icon.swal2-error{border-color:#f27474}.swal2-icon.swal2-error .swal2-x-mark{position:relative;flex-grow:1}.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}.swal2-icon.swal2-success{border-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:3.75em 3.75em;transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 3.75em;transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}.swal2-icon.swal2-success .swal2-success-ring{position:absolute;top:-.25em;left:-.25em;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%;z-index:2;box-sizing:content-box}.swal2-icon.swal2-success .swal2-success-fix{position:absolute;top:.5em;left:1.625em;width:.4375em;height:5.625em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);z-index:1}.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;height:.3125em;border-radius:.125em;background-color:#a5dc86;z-index:2}.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.875em;width:1.5625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-progresssteps{align-items:center;margin:0 0 1.25em;padding:0;font-weight:600}.swal2-progresssteps li{display:inline-block;position:relative}.swal2-progresssteps .swal2-progresscircle{width:2em;height:2em;border-radius:2em;background:#3085d6;color:#fff;line-height:2em;text-align:center;z-index:20}.swal2-progresssteps .swal2-progresscircle:first-child{margin-left:0}.swal2-progresssteps .swal2-progresscircle:last-child{margin-right:0}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep{background:#3085d6}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep~.swal2-progresscircle{background:#add8e6}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep~.swal2-progressline{background:#add8e6}.swal2-progresssteps .swal2-progressline{width:2.5em;height:.4em;margin:0 -1px;background:#3085d6;z-index:10}[class^=swal2]{-webkit-tap-highlight-color:transparent}.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}.swal2-show.swal2-noanimation{-webkit-animation:none;animation:none}.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}.swal2-hide.swal2-noanimation{-webkit-animation:none;animation:none}.swal2-rtl .swal2-close{right:auto;left:0}.swal2-animate-success-icon .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}.swal2-animate-success-icon .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}.swal2-animate-success-icon .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}.swal2-animate-error-icon{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-animate-error-icon .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}@-webkit-keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:initial!important}}</style></head>
+<body class="vsc-initialized   pace-done pace-done"><div class="pace  pace-inactive pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+        <!-- NAVBAR TOP -->
+<style>
+            .progress {
+        background: rgba(255, 255, 255, 0.5);
+        justify-content: flex-start;
+        border-radius: 100px;
+        height: 10px;
+        width: 200px;
+    }
+    .progress-value {
+        animation: load 3s ease-in-out forwards;
+        background: #fff;
+        height: 10px;
+        width: 0;
+    }
+    @keyframes  load {
+        0% { width: 0; }
+        100% { width: 2%; }
+    }
+    .reward-image {
+        width: 30px;
+    }
+        .dropdown-platforms {
+        width: auto;
+    }
+    .dropdown-platforms .brand-row img {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 12px;
+    }
+    .dropdown-platforms .brand-item {
+        max-width: 104px;
+        max-height: 104px;
+        padding: 1rem 1.5rem;
+    }
+    .dropdown-platforms .brand-item:hover,
+    .dropdown-platforms .brand-item.current {
+        border: 1px solid #C2C2C2;
+        border-radius: 4px;
+    }
+    .dropdown-platforms small {
+        font-weight: 500;
+    }
+    .dropdown-bell {
+        border-right: 1px solid #fff;
+    }
+    .dropdown-bell i {
+        font-size: 20px;
+    }
+    .last-user {
+        display: block;
+    }
+    .last-user-mobile {
+        display: none;
+    }
+    @media (max-width: 768px) {
+        .last-user {
+            display: none !important;
+        }
+        .last-user-mobile {
+            display: block !important;
+        }
+    }
+    .dropdown-avatar {
+        width: 232px;
+    }
+    .dropdown-avatar .dropdown-header {
+        border-bottom: 1px solid #EDEFF1;
+    }
+    .dropdown-avatar .dropdown-item,
+    .dropdown-avatar .dropdown-header {
+        padding-left: 16px;
+        padding-right: 16px;
+        white-space: normal !important;
+        word-break: break-word;
+        color: #222F3E;
+    }
+    .dropdown-avatar .dropdown-item i {
+        color: #5A5D61;
+        float: left;
+        font-size: 20px;
+    }
+    .dropdown-avatar .dropdown-item h5 {
+        margin-left: 41px;
+        margin-bottom: unset;
+    }
+    #notifications {
+        max-height: 500px;
+        /*overflow-y: scroll !important;*/
+        overflow-y: auto !important;
+        min-height: 40px;
+        z-index: 100;
+        width: 365px;
+    }
+    #navbar-main .dropdown-item:active {
+        background-color: #edeff1;
+    }
+    .navbar-brand .logo {
+        height: 25px;
+    }
+    @media (max-width: 576px) {
+        .navbar-brand .logo {
+            display: none !important;
+        }
+        .navbar-brand .logo-mobile {
+            display: block !important;
+            height: 25px;
+            margin-bottom: 3px;
+        }
+        #notifications {
+            position: absolute !important;
+            width: 100vw;
+            right: -191.8%;
+            max-height: 65vh;
+        }
+    }
+    @media  screen and (max-width: 360px) {
+        .dropdown-platforms {
+            position: absolute !important;
+            right: 42%;
+            transform: translateX(50%);
+        }
+    }
+    .navbar.bg-gradient-primary.bg-gradient-1M {
+        background: #080808 linear-gradient(180deg, #111111 0, #333333 100%) 0 0 no-repeat padding-box !important;
+    }
+    .notification-item:not(:last-child) {
+        border-bottom: 1px solid #EDEFF1;
+    }
+    .notification-item i {
+        font-size: 15px;
+        color: var(--primary_shadow);
+    }
+    #select_language {
+        position: relative;
+    }
+    #select_language .select_laguage__options {
+        position: absolute;
+        left: 50%;
+        bottom: 0px;
+        transform: translateY(100%) translateX(-50%);
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.3s ease;
+        background: #fff;
+        border: 1px solid #e9ecef;
+        border-radius: 4px;
+    }
+    #select_language:hover .select_laguage__options,
+    #select_language .select_laguage__active {
+        opacity: 1;
+        pointer-events: all;
+    }
+</style>
+<nav class="navbar bg-gradient-primary " id="navbar-main">
+    <div class="container-fluid px-0 px-md-3">
+                    <button type="button" id="sidebarToggleButton" class="btn btn-outline-light" style="display: none;">
+                <i class="fas fa-bars"></i>
+            </button>
+                <!-- Brand -->
+        <a class="navbar-brand p-0" href="https://app.perfectpay.com.br/">
+            <img loading="lazy" class="d-block logo" src="./PerfectPay __ Plataforma do empreendedor digital_files/logo_header.svg" alt="PerfectPay">
+            <img loading="lazy" class="d-none logo-mobile" src="./PerfectPay __ Plataforma do empreendedor digital_files/logo_header_mobile.svg" alt="PerfectPay">
+        </a>
+        <!-- User -->
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown pl-2 mt-1">
+                <div class="d-flex align-items-center">
+                                    </div>
+            </li>
+                            <li class="nav-item pr-3 d-none d-md-block cursor-pointer" onclick="if (!window.__cfRLUnblockHandlers) return false; window.location.href = &quot;https://app.perfectpay.com.br/account/conquistas&quot;">
+                    <div class="row">
+                        <a href="https://app.perfectpay.com.br/#" class="nav-link" data-trigger="hover" data-toggle="popover" data-container="body" data-placement="bottom" data-content="Primeira Venda!" data-original-title="" title="">
+                            <img class="reward-image mx-auto" src="./PerfectPay __ Plataforma do empreendedor digital_files/primeira_venda.png" alt="Primeira Venda!">
+                        </a>
+                        <div class="d-flex flex-column">
+                            <div class="d-flex justify-content-between">
+                                <span>R$ 0</span>
+                                <span>R$ 10K</span>
+                            </div>
+                            <div class="mx-2 my-auto">
+                                <a href="https://app.perfectpay.com.br/#" class="nav-link" data-trigger="hover" data-toggle="popover" data-container="body" data-placement="bottom" data-content="R$ 107,17" data-original-title="" title="">
+                                    <div class="progress">
+                                        <div class="progress-value"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="https://app.perfectpay.com.br/#" class="nav-link" data-trigger="hover" data-toggle="popover" data-container="body" data-placement="bottom" data-content="Mais de R$10.000,00 em vendas" data-original-title="" title="">
+                            <img class="reward-image mx-auto" src="./PerfectPay __ Plataforma do empreendedor digital_files/10k.png" alt="Mais de R$10.000,00 em vendas">
+                        </a>
+                    </div>
+                </li>
+                                    <li class="nav-item dropdown pr-2">
+                <a class="nav-link" href="https://app.perfectpay.com.br/#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="far fa-ellipsis-h text-xxl"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right position-absolute dropdown-platforms p-3">
+                    <div class="brand-row">
+    <div class="d-flex justify-content-around mb-1">
+        <a class="d-flex align-items-center flex-column brand-item rounded" href="https://app.perfectpay.com.br/#">
+            <img loading="lazy" src="./PerfectPay __ Plataforma do empreendedor digital_files/app.svg" alt="PerfectPay">
+            <small>Pay</small>
+        </a>
+        <a class="d-flex align-items-center flex-column brand-item" href="https://academy.perfectpay.com.br/" target="_blank">
+            <img loading="lazy" src="./PerfectPay __ Plataforma do empreendedor digital_files/academy.svg" alt="Academy">
+            <small>Academy</small>
+        </a>
+    </div>
+</div>
+                </div>
+            </li>
+            <li class="nav-item dropdown pr-2 dropdown-bell">
+                <a id="bell" class="nav-link" href="https://app.perfectpay.com.br/#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-bell"></i>
+                                    </a>
+                <div id="notifications" class="dropdown-menu dropdown-menu-right position-absolute overflow-hidden" aria-labelledby="navbar-default_dropdown_1">
+                </div>
+            </li>
+            <li class="nav-item dropdown pl-2">
+                <a class="nav-link" id="img-holder" href="https://app.perfectpay.com.br/#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="rounded-circle avatar" src="./PerfectPay __ Plataforma do empreendedor digital_files/avatar.svg" width="40" height="40" alt="Avatar do Vinicius Benatti Fonseca">
+                </a>
+                <div class="dropdown-menu dropdown-menu-right position-absolute dropdown-avatar">
+                    <div class="dropdown-header pb-3">
+    <h4 class="m-0">Vinicius Benatti Fonseca</h4>
+</div>
+    <a href="https://app.perfectpay.com.br/account/organizacao" class="dropdown-item">
+        <i class="fas fa-user"></i>
+        <h5>Organização</h5>
+    </a>
+    <a href="https://app.perfectpay.com.br/account/conquistas" class="dropdown-item">
+        <i class="fas fa-trophy"></i>
+        <h5>Conquistas</h5>
+    </a>
+    <a href="https://app.perfectpay.com.br/account/indique" class="dropdown-item">
+        <i class="fas fa-chart-network"></i>
+        <h5>Indique</h5>
+    </a>
+    <a href="https://app.perfectpay.com.br/account/senha" class="dropdown-item">
+    <i class="fas fa-user-lock"></i>
+    <h5>Trocar senha</h5>
+</a>
+    <a href="https://app.perfectpay.com.br/account/permissions/userRoleProduct" class="dropdown-item">
+        <i class="fas fa-cog"></i>
+        <h5>Permissões</h5>
+    </a>
+
+
+
+
+    <div class="dropdown-item cursor-pointer" onclick="if (!window.__cfRLUnblockHandlers) return false; document.getElementById(&#39;logout-form&#39;).submit();">
+        <i class="fas fa-power-off"></i>
+        <h5>Logout</h5>
+        <form id="logout-form" action="https://app.perfectpay.com.br/logout" method="POST" class="d-none">
+            <input type="hidden" name="_token" value="Tw2wrVTX7e09eLTzzzkF5z5MZcqLCCzYNctMl3W8">        </form>
+    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="wrapper">
+            <style>
+    /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+    }
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    .h-container-fluid {
+        flex: 1;
+    }
+    .pb-120 {
+        padding-bottom: 120px !important;
+    }
+</style>
+<nav id="sidebar" class="closed pb-120">
+    <!-- Navigation -->
+            <ul>
+    <li>
+        <a class="sidebar-item collapsed active" href="https://app.perfectpay.com.br/">
+            <i class="fas fa-tachometer-fast"></i>
+            <span>Painel</span>
+        </a>
+    </li>
+    <li>
+        <a class="sidebar-item collapsed " href="https://app.perfectpay.com.br/afiliacoes/loja">
+            <i class="fas fa-store"></i>
+            <span>Loja</span>
+        </a>
+    </li>
+    <li>
+        <a href="https://app.perfectpay.com.br/#vendas-sidebar" data-toggle="collapse" aria-expanded="false" class="sidebar-item dropdown-toggle collapsed">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Vendas</span>
+        </a>
+        <ul class="collapse sidebar-collapse" id="vendas-sidebar">
+            <li>
+                <a class="" href="https://app.perfectpay.com.br/vendas/extrato">
+
+                    Relatório
+                </a>
+            </li>
+            <li>
+                <a class="" href="https://app.perfectpay.com.br/vendas/abandonos">
+                    Abandonos
+                </a>
+            </li>
+            <li>
+                <a class="" href="https://app.perfectpay.com.br/vendas/devolucoes">
+                    Devoluções / Disputas
+                </a>
+            </li>
+            <li>
+                <a class="" href="https://app.perfectpay.com.br/vendas/detalhamento">
+                    Detalhamento
+                </a>
+            </li>
+            <li>
+                <a class="" href="https://app.perfectpay.com.br/vendas/tracking">
+                    Rastreio
+                </a>
+            </li>
+            <li>
+                <a class="" href="https://app.perfectpay.com.br/vendas/assinaturas?start_page=1">
+                    Assinaturas
+                </a>
+            </li>
+            <li>
+                <a class="" href="https://app.perfectpay.com.br/vendas/suporte">
+                    Suporte / Ajuda
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="https://app.perfectpay.com.br/#produtos-sidebar" data-toggle="collapse" aria-expanded="false" class="sidebar-item dropdown-toggle collapsed">
+            <i class="fas fa-box"></i>
+            <span>Produtos</span>
+        </a>
+        <ul id="produtos-sidebar" class=" collapse sidebar-collapse">
+            <li>
+                <a class="" href="https://app.perfectpay.com.br/products">
+                    Meus Produtos
+                </a>
+            </li>
+            <li>
+                <a class="" href="https://app.perfectpay.com.br/reports/compras">
+                    Minhas Compras
+                </a>
+            </li>
+            <li>
+                <a class="" href="https://app.perfectpay.com.br/produtos/permissoes/userRoleProduct">
+                    Permissões
+                </a>
+            </li>
+                            <li>
+                    <a class="" href="https://app.perfectpay.com.br/vitrine">
+                        Vitrine
+                    </a>
+                </li>
+                    </ul>
+    </li>
+        <li>
+        <a href="https://app.perfectpay.com.br/#afiliados-sidebar" data-toggle="collapse" aria-expanded="false" class="sidebar-item dropdown-toggle collapsed">
+            <i class="fas fa-user-friends"></i>
+            <span>Afiliados</span>
+        </a>
+        <ul id="afiliados-sidebar" class="collapse sidebar-collapse">
+            <li>
+                <a class="" href="https://app.perfectpay.com.br/afiliacoes/solicitacoes">
+                    Convites e Solicitações
+                </a>
+            </li>
+            <li>
+                <a class="" href="https://app.perfectpay.com.br/produtos/afiliados">
+                    Meus Afiliados
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="https://app.perfectpay.com.br/#ferramentas-sidebar" data-toggle="collapse" aria-expanded="false" class="sidebar-item dropdown-toggle collapsed">
+            <i class="fas fa-wrench"></i>
+            <span>Ferramentas</span>
+        </a>
+        <ul id="ferramentas-sidebar" class="collapse sidebar-collapse">
+            <li>
+                <a class="" href="https://app.perfectpay.com.br/ferramentas/integracoes">
+                    Integrações
+                </a>
+            </li>
+            <li>
+                <a class="" href="https://app.perfectpay.com.br/ferramentas/webhook">
+                    Webhook - Vendas
+                </a>
+            </li>
+            <li>
+                <a class="" href="https://app.perfectpay.com.br/ferramentas/webhook/affiliation">
+                    Webhook - Afiliados
+                </a>
+            </li>
+            <li>
+                <a class="" href="https://app.perfectpay.com.br/ferramentas/apis">
+                    API
+                </a>
+            </li>
+            <li>
+                <a class="" href="https://app.perfectpay.com.br/ferramentas/errowebhook">
+                    Erros Integrações
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="https://app.perfectpay.com.br/#financeiro-sidebar" data-toggle="collapse" aria-expanded="false" class="sidebar-item dropdown-toggle collapsed">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>Financeiro</span>
+        </a>
+        <ul id="financeiro-sidebar" class="collapse sidebar-collapse">
+            <li>
+                <a class="" href="https://app.perfectpay.com.br/saque">
+                    Saque
+                </a>
+            </li>
+
+
+
+
+
+            <li>
+                <a class="" href="https://app.perfectpay.com.br/financeiro/extrato">
+                    Extrato
+                </a>
+            </li>
+            <li>
+                <a class="" href="https://app.perfectpay.com.br/financeiro/tarifas">
+                    Taxas e Tarifas
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a class="sidebar-item collapsed " href="https://app.perfectpay.com.br/feedback">
+            <i class="fas fa-comments"></i>
+            <span>Feedback</span>
+        </a>
+    </li>
+    <li>
+        <a id="link-academy" href="https://app.perfectpay.com.br/#academy-sidebar-collapse" data-toggle="collapse" aria-expanded="false" class="sidebar-item dropdown-toggle collapsed">
+            <i class="fas fa-book"></i>
+            <span>PerfectAcademy</span>
+        </a>
+        <ul id="academy-sidebar-collapse" class="collapse sidebar-collapse">
+            <li>
+                <a target="_blank" href="https://academy.perfectpay.com.br/">
+                    Acessar PerfectAcademy
+                </a>
+            </li>
+            <li>
+                <a class="" href="https://app.perfectpay.com.br/ferramentas/integracoes/academy">
+                    Integrar com produtos
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>
+            </nav>
+        <div id="wrapperContent" class="content container-fluid closed">
+                    <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="https://app.perfectpay.com.br/" onclick="if (!window.__cfRLUnblockHandlers) return false; payLoading()">Painel</a>
+                </li>
+                                                    <li class="breadcrumb-menu d-md-down-none ml-auto mr-5">
+                        <div class="btn-group" role="group" aria-label="Button group">
+                            <a href="https://app.perfectpay.com.br/account/indique" class="btn btn-secondary btn-sm d-none d-lg-inline">
+                                <i class="fas fa-hand-holding-usd"></i> Indique e Ganhe R$
+                            </a>
+                        </div>
+                    </li>
+                            </ul>
+                                <div id="main">
+                        
+    <div class="row">
+        <div class="col-12 col-lg-4 col-quick-access">
+            <h1 class="font-weight-normal text-dark">Acesso rápido</h1>
+    <a href="https://app.perfectpay.com.br/products">
+        <div class="card border-0 shadow quick-access-card">
+            <div class="card-header d-flex align-items-center p-3">
+            <div>
+                    <i class="fas fa-box text-secondary text-3xl"></i>
+                </div>
+                <div class="ml-4 text-dark">
+                    <h6>Meus Produtos</h6>
+                    <small>Veja seus produtos e links para divulgar</small>
+                </div>
+        </div>
+    
+    <div class="card-body d-none">
+        
+    </div>
+
+    </div>
+
+
+    </a>
+    <a href="https://app.perfectpay.com.br/afiliacoes/loja">
+        <div class="card border-0 shadow quick-access-card">
+            <div class="card-header d-flex align-items-center p-3">
+            <div>
+                    <i class="fas fa-store text-secondary text-3xl"></i>
+                </div>
+                <div class="ml-4 text-dark">
+                    <h6>Loja</h6>
+                    <small>Escolha novos produtos para promover</small>
+                </div>
+        </div>
+    
+    <div class="card-body d-none">
+        
+    </div>
+
+    </div>
+
+
+    </a>
+    <a href="https://app.perfectpay.com.br/vendas/extrato">
+        <div class="card border-0 shadow quick-access-card">
+            <div class="card-header d-flex align-items-center p-3">
+            <div>
+                    <i class="fas fa-shopping-cart text-secondary text-3xl"></i>
+                </div>
+                <div class="ml-4 text-dark">
+                    <h6>Relatório de vendas</h6>
+                    <small>Consulte os detalhes de suas vendas</small>
+                </div>
+        </div>
+    
+    <div class="card-body d-none">
+        
+    </div>
+
+    </div>
+
+
+    </a>
+    <a href="https://app.perfectpay.com.br/saque">
+        <div class="card border-0 shadow quick-access-card">
+            <div class="card-header d-flex align-items-center p-3">
+            <div>
+                    <i class="fas fa-money-bill-wave text-secondary text-3xl"></i>
+                </div>
+                <div class="ml-4 text-dark">
+                    <h6>Saque</h6>
+                    <small>Consulte seu saldo e solicite saques</small>
+                </div>
+        </div>
+    
+    <div class="card-body d-none">
+        
+    </div>
+
+    </div>
+
+
+    </a>
+    <a href="https://app.perfectpay.com.br/account/indique">
+        <div class="card border-0 shadow quick-access-card">
+            <div class="card-header d-flex align-items-center p-3">
+            <div>
+                    <i class="fas fa-users text-secondary text-3xl"></i>
+                </div>
+                <div class="ml-4 text-dark">
+                    <h6>Indique e ganhe</h6>
+                    <small>Ganhe comissões pelas vendas dos indicados</small>
+                </div>
+        </div>
+    
+    <div class="card-body d-none">
+        
+    </div>
+
+    </div>
+
+
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="col-12 col-lg-8 mt-lg-0 mt-4">
+            <div class="d-flex justify-content-between align-items-start">
+    <h1 class="font-weight-normal text-dark">Resumo financeiro</h1>
+    <input id="showDataCheckbox" type="checkbox" class="d-none" aria-hidden="true">
+    <button id="showData" class="btn base-button btn-link-alt p-0 text-md"><i class="fas fa-eye-slash mr-1"></i><span class="font-weight-bold">Ocultar dados</span></button>
+</div>
+
+<div class="row" id="rowResume">
+    <div class="col-12 col-lg-6 mb-3 pr-lg-2">
+        <div class="card shadow border-0 resume-card">
+            <div class="card-header p-3 resume-header" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+            <h5 class="card-title mb-2">Vendas hoje</h5>
+                <span class="card-text font-weight-600 show-resume mb-0 text-xxl" id="sumSalesToday">R$ 0,00</span>
+                <div class="text-center text-primary card-text load-resume d-none blur" style="font-size: 28px;">
+    <i class="fas fa-spinner fa-pulse fa-xs " aria-hidden="true"></i>
+</div>
+        </div>
+    
+    <div class="card-body resume-body">
+        <h5 class="mb-0">Ontem:
+                <span id="sumSalesYesterday">R$ 0,00</span>
+            </h5>
+    </div>
+
+    </div>
+
+
+    </div>
+    <div class="col-12 col-lg-6 mb-3 pl-lg-2">
+        <div class="card shadow border-0 resume-card">
+            <div class="card-header p-3 resume-header" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+            <h5 class="card-title mb-2">Vendas esse mês</h5>
+                <span class="card-text font-weight-600 show-resume mb-0 text-xxl" id="sumSalesThisMonth">R$ 0,00</span>
+                <div class="text-center text-primary card-text load-resume d-none blur" style="font-size: 28px;">
+    <i class="fas fa-spinner fa-pulse fa-xs " aria-hidden="true"></i>
+</div>
+        </div>
+    
+    <div class="card-body resume-body">
+        <h5 class="mb-0">Mês passado:
+                <span id="sumSalesLastMonth">R$ 17,33</span>
+            </h5>
+    </div>
+
+    </div>
+
+
+    </div>
+    <div class="col-12 mb-3">
+        <div class="card shadow border-0 resume-card">
+            <div class="card-header p-3 resume-header" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+            <h5 class="card-title mb-2">Disponível para saque</h5>
+                <span class="card-text font-weight-600 show-resume mb-0 text-xxl" id="sumTransaction">R$ 65,31</span>
+                <div class="text-center text-primary card-text load-resume d-none blur" style="font-size: 28px;">
+    <i class="fas fa-spinner fa-pulse fa-xs " aria-hidden="true"></i>
+</div>
+        </div>
+    
+    <div class="card-body resume-body">
+        <h5>Pendente (pix e boleto):
+                <span id="sumTransactionPending">R$ 0,00</span>
+            </h5>
+            <h4 class="font-weight-900">Total:
+                <span id="sumTransactionUser">R$ 65,31</span>
+            </h4>
+            <a href="https://app.perfectpay.com.br/saque" class="btn btn-sm btn-primary w-sm-100" style="margin-bottom: 2px;">Solicitar saque
+            </a>
+    </div>
+
+    </div>
+
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</div>
+<div class="card border-0 shadow" id="cardCharts">
+            <div class="card-header border-0 p-3">
+            <div class="d-lg-flex justify-content-between align-items-center">
+            <h5 class="text-wrap mb-0">Vendas aprovadas (pela data de aprovação)</h5>
+            <div class="mt-4 mt-lg-0 d-flex d-md-block justify-content-between">
+                <button type="button" class="btn btn-outline-light btn-sm btnGraphShow active" data-show="#resumeDays">
+                    Por dia
+                </button>
+                <button type="button" class="btn btn-outline-light btn-sm btnGraphShow" data-show="#resumeMonth">
+                    Por mês
+                </button>
+                <button type="button" class="btn btn-outline-light btn-sm btnGraphShow" data-show="#resumeYear">
+                    Por ano
+                </button>
+            </div>
+        </div>
+        </div>
+    
+    <div class="card-body d-none-ni" style="display: block;">
+        <p class="text-gray small">
+        Valores em reais
+    </p>
+    <div id="rowCharts"><div>
+    <div id="resumeDays" class="chart-wrapper d-none-ni" style="display: block;">
+        <div><div class="chartjs-size-monitor" style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+            <canvas class="chart chartjs-render-monitor" id="chartDays" height="350" style="display: block; width: 987px; height: 350px;" width="987"></canvas>
+        </div>
+        <div class="legend">
+            <span class="line--green">Mês atual</span>
+            <span class="line--gray">Mês anterior</span>
+        </div>
+        <small class="d-block text-center text-gray mt-3">Dias</small>
+    </div>
+    <div id="resumeMonth" class="chart-wrapper d-none-ni" style="display: none;">
+        <div>
+            <canvas class="chart chartjs-render-monitor" id="chartMonth" height="0" style="display: block; width: 0px; height: 0px;" width="0"></canvas>
+        </div>
+        <div class="legend">
+            <span class="line--green">Ano atual</span>
+            <span class="line--gray">Ano anterior</span>
+        </div>
+        <small class="d-block text-center text-gray mt-3">Meses</small>
+    </div>
+    <div id="resumeYear" class="chart-wrapper d-none-ni" style="display: none;">
+        <div>
+            <canvas class="chart chartjs-render-monitor" id="chartYear" height="0" style="display: block; width: 0px; height: 0px;" width="0"></canvas>
+        </div>
+        <div class="legend">
+            <span class="line--green">Crescimento anual</span>
+        </div>
+        <small class="d-block text-center text-gray mt-3">Anos</small>
+    </div>
+</div>
+
+<script>
+    function chartCall() {
+        const dataChartDays = {
+            title: 'Dia',
+            labels: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31],
+            datasets: [
+                {
+                    label: 'Dia anterior',
+                    titleFormatted: ["01\/05\/2024","02\/05\/2024","03\/05\/2024","04\/05\/2024","05\/05\/2024","06\/05\/2024","07\/05\/2024","08\/05\/2024","09\/05\/2024","10\/05\/2024","11\/05\/2024","12\/05\/2024","13\/05\/2024","14\/05\/2024","15\/05\/2024","16\/05\/2024","17\/05\/2024","18\/05\/2024","19\/05\/2024","20\/05\/2024","21\/05\/2024","22\/05\/2024","23\/05\/2024","24\/05\/2024","25\/05\/2024","26\/05\/2024","27\/05\/2024","28\/05\/2024","29\/05\/2024","30\/05\/2024","--"],
+                    backgroundColor: hexToRgba(getStyle('--pay-blue'), 10),
+                    borderColor: hexToRgba(getStyle('--pay-blue'), 50),
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17.33,0,0,0,0,0],
+                    labelsFormatted: ["R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 17,33","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00"]
+                },
+                {
+                    label: 'Dia atual',
+                    titleFormatted: ["01\/07\/2024","02\/07\/2024","03\/07\/2024","04\/07\/2024","05\/07\/2024","06\/07\/2024","07\/07\/2024","08\/07\/2024","09\/07\/2024","10\/07\/2024","11\/07\/2024","12\/07\/2024","13\/07\/2024","14\/07\/2024","15\/07\/2024","16\/07\/2024","17\/07\/2024","18\/07\/2024","19\/07\/2024","20\/07\/2024","21\/07\/2024","22\/07\/2024","23\/07\/2024","24\/07\/2024","25\/07\/2024","26\/07\/2024","27\/07\/2024","28\/07\/2024","29\/07\/2024","30\/07\/2024","31\/07\/2024"],
+                    backgroundColor: hexToRgba(getStyle('--pay-green'), 40),
+                    borderColor: getStyle('--pay-green'),
+                    data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+                    labelsFormatted: ["R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00"]
+                }
+            ]
+        };
+        const dataChartMonth = {
+            title: 'Mês',
+            labels: [1,2,3,4,5,6,7,8,9,10,11,12],
+            datasets: [
+                {
+                    label: 'Ano anterior',
+                    titleFormatted: ["01\/2023","02\/2023","03\/2023","04\/2023","05\/2023","06\/2023","07\/2023","08\/2023","09\/2023","10\/2023","11\/2023","12\/2023"],
+                    backgroundColor: hexToRgba(getStyle('--pay-blue'), 10),
+                    borderColor: hexToRgba(getStyle('--pay-blue'), 50),
+                    data: [0,0,0,0,0,0,0,0,0,47.98,0,0],
+                    labelsFormatted: ["R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 47,98","R$ 0,00","R$ 0,00"]
+                },
+                {
+                    label: 'Ano atual',
+                    titleFormatted: ["01\/2024","02\/2024","03\/2024","04\/2024","05\/2024","06\/2024","07\/2024","08\/2024","09\/2024","10\/2024","11\/2024","12\/2024"],
+                    backgroundColor: hexToRgba(getStyle('--pay-green'), 40),
+                    borderColor: getStyle('--pay-green'),
+                    data: [0,0,0,0,0,17.33,0,0,0,0,0,0],
+                    labelsFormatted: ["R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 17,33","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00"]
+                }
+            ]
+        };
+        const dataChartYear = {
+            title: 'Ano',
+            labels: [2018,2019,2020,2021,2022,2023,2024],
+            datasets: [
+                {
+                    label: 'Ano atual',
+                    titleFormatted: ["2018","2019","2020","2021","2022","2023","2024"],
+                    backgroundColor: hexToRgba(getStyle('--pay-green'), 40),
+                    borderColor: getStyle('--pay-green'),
+                    data: [0,0,0,0,0,47.98,17.33],
+                    labelsFormatted: ["R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 0,00","R$ 47,98","R$ 17,33"]
+                }
+            ]
+        };
+        let chartDays = createChart($('#chartDays'), dataChartDays);
+        let chartMonth = createChart($('#chartMonth'), dataChartMonth);
+        let chartYear = createChart($('#chartYear'), dataChartYear);
+    }
+
+    function createChart($chartSelector, data) {
+        Chart.defaults.global.pointHitDetectionRadius = 1;
+        Chart.defaults.global.tooltips.enabled = true;
+        Chart.defaults.global.tooltips.mode = 'nearest';
+        Chart.defaults.global.tooltips.position = 'nearest';
+        Chart.defaults.scale.ticks.beginAtZero = true;
+        Chart.defaults.global.elements.rectangle.borderWidth = 2;
+        Chart.defaults.global.defaultFontFamily = `"Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+        Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`;
+        const options = {
+            responsive: true,
+            tooltips: {
+                callbacks: {
+                    title: function(item, context) {
+                        return context.datasets[item[0].datasetIndex].titleFormatted[item[0].index];
+                    },
+                    label: function(item, context) {
+                        return context.datasets[item.datasetIndex].labelsFormatted[item.index];
+                    }
+                }
+            }
+        };
+
+        new Chart($chartSelector, {
+            type: 'line',
+            data: data,
+            options: options
+        });
+    }
+
+</script>
+</div>
+    </div>
+
+    </div>
+
+
+
+
+            <div class="include-messages-blade">
+                
+            </div>
+            <div class="card border-0 shadow mt-3">
+    
+    <div class="card-body p-3">
+        <h5>Divulgue a PerfectPay usando o link abaixo e receba comissão.</h5>
+                <div class="input-group mb-2 mr-4 mt-3">
+                    <input type="text" class="form-control" id="linkRefferal" value="https://app.perfectpay.com.br/refer/REFPPU15CGJX8W" readonly="">
+                    <div class="input-group-append">
+                        <a href="https://app.perfectpay.com.br/#" class="btn base-button bg-gradient-primary btnCopiarLink" data-copy_id="#linkRefferal" title="Copiar url">
+                            <i class="fa fa-clone"></i>
+                        </a>
+                    </div>
+                </div>
+                <small class="mt-1">Quando o usuário participar de uma venda usando seu link, seja como afiliado ou produtor, você ganha 1% sobre o valor total da venda.
+                </small>
+    </div>
+
+    </div>
+
+
+                            <div class="w-100">
+                </div>
+                <div class="row">
+                                            <div class="col-sm-4 col-12">
+                            <div class="card mt-3 shadow border-0 p-0">
+    
+    <div class="card-body p-0">
+        <a href="https://app.perfectpay.com.br/campaign/3L3A03" target="_blank">
+                                    <img loading="lazy" style="max-height: 100%; max-width: 100%" src="./PerfectPay __ Plataforma do empreendedor digital_files/instagram_400x400.png" alt="Instagram" class="rounded">
+                                </a>
+    </div>
+
+    </div>
+
+
+                        </div>
+                                            <div class="col-sm-4 col-12">
+                            <div class="card mt-3 shadow border-0 p-0">
+    
+    <div class="card-body p-0">
+        <a href="https://app.perfectpay.com.br/campaign/3L3A04" target="_blank">
+                                    <img loading="lazy" style="max-height: 100%; max-width: 100%" src="./PerfectPay __ Plataforma do empreendedor digital_files/telegram_400x400.png" alt="Telegram" class="rounded">
+                                </a>
+    </div>
+
+    </div>
+
+
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+        
+                    </div>
+    </div>
+</div>
+<!-- CoreUI and necessary plugins-->
+<script type="text/javascript" async="" src="./PerfectPay __ Plataforma do empreendedor digital_files/js"></script><script type="text/javascript" src="./PerfectPay __ Plataforma do empreendedor digital_files/vendor.ec06f8ec.js.download"></script><script type="text/javascript" src="./PerfectPay __ Plataforma do empreendedor digital_files/main.1b521b0d.js.download"></script><script type="text/javascript" src="./PerfectPay __ Plataforma do empreendedor digital_files/vendor.ec06f8ec.js.download"></script><script type="text/javascript" src="./PerfectPay __ Plataforma do empreendedor digital_files/main.1b521b0d.js.download"></script><script type="text/javascript" async="" src="./PerfectPay __ Plataforma do empreendedor digital_files/saved_resource"></script><script type="text/javascript" async="" src="./PerfectPay __ Plataforma do empreendedor digital_files/saved_resource"></script><script src="./PerfectPay __ Plataforma do empreendedor digital_files/598895344024995" async=""></script><script src="./PerfectPay __ Plataforma do empreendedor digital_files/155781366233012" async=""></script><script async="" src="./PerfectPay __ Plataforma do empreendedor digital_files/fbevents.js.download"></script><script type="text/javascript" async="" src="./PerfectPay __ Plataforma do empreendedor digital_files/analytics.js.download"></script><script async="" src="./PerfectPay __ Plataforma do empreendedor digital_files/gtm.js.download"></script><script src="./PerfectPay __ Plataforma do empreendedor digital_files/app.js.download" type="text/javascript"></script>
+<script type="text/javascript" src="./PerfectPay __ Plataforma do empreendedor digital_files/select2.min.js.download"></script>
+<script type="text/javascript" src="./PerfectPay __ Plataforma do empreendedor digital_files/pt-BR.js.download"></script>
+
+<script type="text/javascript" src="./PerfectPay __ Plataforma do empreendedor digital_files/jquery.mask.min.js.download"></script>
+<script src="./PerfectPay __ Plataforma do empreendedor digital_files/jquery.maskMoney.js.download" type="text/javascript"></script>
+<script type="text/javascript" src="./PerfectPay __ Plataforma do empreendedor digital_files/toastr.min.js.download"></script>
+<script type="text/javascript" src="./PerfectPay __ Plataforma do empreendedor digital_files/moment.min.js.download"></script>
+<script type="text/javascript" src="./PerfectPay __ Plataforma do empreendedor digital_files/daterangepicker.min.js.download"></script>
+<script src="./PerfectPay __ Plataforma do empreendedor digital_files/argon.js.download" type="text/javascript"></script>
+<script src="./PerfectPay __ Plataforma do empreendedor digital_files/loading.js.download" type="text/javascript"></script>
+<script src="./PerfectPay __ Plataforma do empreendedor digital_files/utils.js.download" type="text/javascript"></script>
+<script src="./PerfectPay __ Plataforma do empreendedor digital_files/enums.js.download" type="text/javascript"></script>
+<script type="text/javascript" src="./PerfectPay __ Plataforma do empreendedor digital_files/jquery.validate.js.download"></script>
+<script type="text/javascript" src="./PerfectPay __ Plataforma do empreendedor digital_files/pay.validate.js.download"></script>
+<script type="text/javascript">
+    window.QS = function (selector) {
+        return document.querySelector(selector);
+    };
+    window.QSA = function (selector) {
+        let items = {},
+            results = [],
+            length = 0,
+            i = 0;
+        // this doesn’t work on IE 8- and Blackberry Browser
+        results = Array.prototype.slice.call(document.querySelectorAll(selector));
+        length = results.length;
+        // add the results to the items object
+        for (; i < length;) {
+            items[i] = results[i];
+            i++;
+        }
+        // add some additional properties to this items object to
+        // make it look like an array
+        items.length = length;
+        items.splice = [].splice();
+        // add an ‘each’ method to the items
+        items.each = function (callback) {
+            let i = 0;
+            for (; i < length;) {
+                callback.call(items[i]);
+                i++;
+            }
+        }
+        return items;
+    };
+
+    function addEvent(el, eventName, handler) {
+        if (el.addEventListener) {
+            el.addEventListener(eventName, handler);
+        } else {
+            el.attachEvent('on' + eventName, function () {
+                handler.call(el);
+            });
+        }
+    }
+
+    async function perfectSwitchInputAjax(data, url) {
+        $.ajaxSetup({
+            headers: {'X-CSRF-TOKEN': 'Tw2wrVTX7e09eLTzzzkF5z5MZcqLCCzYNctMl3W8'},
+            method: 'POST',
+            url: url,
+        });
+        return $.ajax({
+            data: data,
+            success: function (data) {
+                payLoading("none");
+                toastr["success"]("<b>SUCESSO: </b><br>" + data.message);
+                return true;
+            },
+            error: function (data) {
+                payLoading("none");
+                toastr["error"]("<b>ERRO: </b><br>" + data.responseJSON.message);
+                return false;
+            }
+        });
+    }
+
+    (function ($) {
+        // Set defaults to select2 component
+        $.fn.select2.defaults.set('language', 'br');
+        $.fn.select2.defaults.set("theme", "bootstrap");
+        setDefaultsValidator();
+
+        $(document).on('click', 'a[data-copy_text],a[data-copy_id]', function (event, i) {
+            event.preventDefault();
+            let inputId = $(this).data('copy_id') || '#copyText';
+            let copyText = (inputId === '#copyText' ? $(this).data('copy_text') || '' : $(inputId).val() || '');
+            if (copyText === '') {
+                console.log('textovazio');
+                return false;
+            }
+            if (document.getElementById("copyText") === null) {
+                let input = document.createElement("input");
+                input.type = "text";
+                input.id = "copyText";
+                input.value = copyText;
+                document.getElementsByTagName("body")[0].appendChild(input);
+            } else {
+                document.getElementById("copyText").value = copyText;
+            }
+            document.getElementById("copyText").select();
+            document.execCommand("copy");
+            setTimeout(function () {
+                $('#copyText').remove();
+            }, 1000);
+            toastr["success"](`<small> ${$(inputId).val()} </small> <br> copiado com sucesso!`);
+        });
+        //----------------------------------------------------------------------------------------------------
+        $('.date_range').on('cancel.daterangepicker', function (ev, picker) {
+            $(this).val('');
+        });
+        /** @noinspection  Annotator */
+        /*
+                // ajuste para funcionaro language nos códigos abaixo DD/MM/YYYY        */
+        $('.date_range').daterangepicker({
+            maxDate: moment().endOf("day"),
+            alwaysShowCalendars: true,
+            showCustomRangeLabel: 'Customizado',
+            autoUpdateInput: true,
+            locale: {
+                locale: 'pt-br',
+                format: "DD/MM/YYYY",
+                applyLabel: "Aplicar",
+                cancelLabel: 'Limpar',
+                fromLabel: "De",
+                toLabel: "Até",
+                customRangeLabel: "Customizado",
+                weekLabel: "W",
+                daysOfWeek: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"],
+                monthNames: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
+                firstDay: 0,
+            },
+            ranges: {
+                'Hoje': [moment(), moment()],
+                'Ontem': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                'Últimos 7 dias': [moment().subtract(6, 'days'), moment()],
+                'Últimos 14 dias': [moment().subtract(13, 'days'), moment()],
+                'Últimos 30 dias': [moment().subtract(29, 'days'), moment()],
+                'Esta semana': [moment().startOf('week'), moment().endOf('week')],
+                'Semana passada': [moment().subtract(1, 'weeks').startOf('week'), moment().subtract(1, 'weeks').endOf('week')],
+                'Este mês': [moment().startOf('month'), moment().endOf('month')],
+                'Mês passado': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+            },
+            buttonClasses: 'btn font-weight-600',
+            applyButtonClasses: 'btn-secondary',
+            cancelButtonClasses: 'text-gray'
+        });
+
+        $('.date_range').on('cancel.daterangepicker', function (ev, picker) {
+            $(this).val('');
+        });
+
+        $('.single_date_picker').daterangepicker({
+            singleDatePicker: true,
+            alwaysShowCalendars: true,
+            showCustomRangeLabel: 'Customizado',
+            autoUpdateInput: true,
+            locale: {
+                locale: 'pt-br',
+                format: "DD/MM/YYYY",
+                weekLabel: "W",
+                daysOfWeek: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"],
+                monthNames: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
+                firstDay: 0,
+            },
+        });
+                $('#order_date_range').val('');
+                        $('#approved_date_range').val('');
+        
+            toastr.options = {"positionClass": "toast-top-right", "target": "#main"}
+                                                                
+        $(document).on('click', '.nav-dropdown-toggle', function (e) {
+            e.preventDefault();
+            // $('.nav-dropdown').removeClass('open');
+            $(this).toggleClass('open');
+            $(this).closest('li').toggleClass('open');
+        })
+
+        $('.modal').on('hidden.bs.modal', function (event) {
+            $(this).removeClass('fv-modal-stack');
+            $('body').data('fv_open_modals', $('body').data('fv_open_modals') - 1);
+        });
+
+        $('.modal').on('shown.bs.modal', function (event) {
+            // keep track of the number of open modals
+            if (typeof ($('body').data('fv_open_modals')) == 'undefined') {
+                $('body').data('fv_open_modals', 0);
+            }
+            // if the z-index of this modal has been set, ignore.
+            if ($(this).hasClass('fv-modal-stack')) {
+                return;
+            }
+            $(this).addClass('fv-modal-stack');
+            $('body').data('fv_open_modals', $('body').data('fv_open_modals') + 1);
+            $(this).css('z-index', 1040 + (10 * $('body').data('fv_open_modals')));
+            $('.modal-backdrop').not('.fv-modal-stack').css('z-index', 1039 + (10 * $('body').data('fv_open_modals')));
+            $('.modal-backdrop').not('fv-modal-stack').addClass('fv-modal-stack');
+        });
+
+    }(jQuery));
+</script>
+<script type="text/javascript">!function (e, t, n) {
+        function a() {
+            var e = t.getElementsByTagName("script")[0], n = t.createElement("script");
+            n.type = "text/javascript", n.async = !0, n.src = "https://beacon-v2.helpscout.net", e.parentNode.insertBefore(n, e)
+        }
+        if (e.Beacon = n = function (t, n, a) {
+            e.Beacon.readyQueue.push({method: t, options: n, data: a})
+        }, n.readyQueue = [], "complete" === t.readyState) return a();
+        e.attachEvent ? e.attachEvent("onload", a) : e.addEventListener("load", a, !1)
+    }(window, document, window.Beacon || function () {
+    });</script>
+<script type="text/javascript">window.Beacon('init', '4fbfb3b3-a039-40f8-9316-bbf77d6ac773')</script>
+    <div id="animate_icon_overlay"></div>
+<div class="animate_icon" style="display: none;">
+    <div class="custom-loading-loader">
+        <div class="-mr-2 -mb-2"></div>
+        <div class="-mb-2"></div>
+        <div class="-mr-2"></div>
+        <div></div>
+    </div>
+</div>
+<style>
+    #animate_icon_overlay {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #EDEFF1;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        z-index: 11000;
+        cursor: pointer;
+    }
+    .animate_icon {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 12000;
+        overflow: auto;
+        top: 0;
+    }
+    .-mr-2 {
+        margin-right: -55px;
+    }
+    .-mb-2 {
+        margin-bottom: -60px;
+    }
+    .custom-loading-loader {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .custom-loading-loader div {
+        width: 25px;
+        height: 25px;
+        border-radius: 4px;
+        background: var(--gradient_primary);
+        box-shadow: 0 3px 6px #00000029;
+        animation: in-cube-one 1s infinite forwards;
+    }
+    .custom-loading-loader div:nth-child(2) {
+        animation: in-cube-two 1s infinite;
+    }
+    .custom-loading-loader div:nth-child(3) {
+        animation: in-cube-four 1s infinite;
+        margin-left: 5px;
+    }
+    .custom-loading-loader div:nth-child(4) {
+        animation: in-cube-three 1s infinite;
+    }
+    @keyframes  in-cube-one {
+        0% {
+            transform: scale(0.1);
+            opacity: 0;
+        }
+        20%,
+        40%,
+        60%,
+        80% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(0.1);
+            opacity: 0;
+        }
+    }
+    @keyframes  in-cube-two {
+        0%,
+        20% {
+            transform: scale(0.1);
+            opacity: 0;
+        }
+        40%,
+        60%,
+        80% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(0.1);
+            opacity: 0;
+        }
+    }
+    @keyframes  in-cube-three {
+        0%,
+        20%,
+        40% {
+            transform: scale(0.1);
+            opacity: 0;
+        }
+        60%,
+        80% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(0.1);
+            opacity: 0;
+        }
+    }
+    @keyframes  in-cube-four {
+        0%,
+        20%,
+        40%,
+        60% {
+            transform: scale(0.1);
+            opacity: 0;
+        }
+        80% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(0.1);
+            opacity: 0;
+        }
+    }
+</style>
+<script type="text/javascript">
+    // mostrar: payLoading();
+    // esconder: payLoading("none");
+    function payLoading(display = 'block', zIndex = null) {
+        $('#animate_icon_overlay').css('display', display);
+        $('.animate_icon').css('display', display);
+
+        if (zIndex !== null) {
+            $('#animate_icon_overlay').css('zIndex', zIndex);
+            $('.animate_icon').css('zIndex', zIndex + 1);
+
+        }
+    }
+    function payLoadingModal(display = 'block', zIndex = null) {
+        $('.modal').modal('hide');
+        payLoading(display, zIndex);
+    }
+</script>
+<script type="text/javascript">
+    function spinnerLoading(idLoading, status = true) {
+        const loading = document.getElementById(idLoading)
+        if(!status) {
+            loading.classList.add('d-none')
+            return
+        }
+        loading.classList.remove('d-none')
+    }
+</script>
+    <script type="text/javascript">
+        $(document).on('click', '.btnGraphShow', function () {
+            let show = $(this).data('show');
+            const cardChartsBody = $('#cardCharts .card-body');
+            if (!cardChartsBody.is(':visible')) {
+                cardChartsBody.show('fast');
+            }
+            $('.btnGraphShow').removeClass('active');
+            $(this).addClass('active');
+            $('.chart-wrapper').hide();
+            $(show).show();
+            $(show).find('canvas').css('height', '350px');
+        });
+    </script>
+    <script type="text/javascript">
+        $('#showData').on('click', function() {
+            const checkbox = $("#showDataCheckbox");
+            checkbox.prop("checked", !checkbox.prop("checked"));
+
+            if (checkbox.prop("checked")) {
+                $(this).html('<i class="fas fa-eye-slash mr-1"></i><span class="font-weight-bold">Ocultar dados</span>');
+                $('.btnGraphShow').first().click();
+            } else {
+                $(this).html('<i class="fas fa-eye mr-1"></i><span class="font-weight-bold">Exibir dados</span>');
+                $('.chart-wrapper, #cardCharts .card-body').hide();
+                $('.btnGraphShow').removeClass('active');
+            }
+
+            $('.resume-header').css('border-bottom-left-radius', checkbox.prop("checked") ? '0' : '4px');
+            $('.resume-header').css('border-bottom-right-radius', checkbox.prop("checked") ? '0' : '4px');
+            $('.resume-body').toggleClass('hide');
+            $('.card-text').toggleClass('blur');
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).on('click', '.dropdown-avatar .dropdown-item', function (e) {
+            payLoading();
+        });
+
+        $('#bell').on('click', function (event) {
+            let value = $(this).attr('aria-expanded');
+            if (value == 'false') {
+                $('#bell-number').text('');
+                $('#notifications').html(`<div class="text-center text-primary" style="font-size: 28px;">
+    <i class="fas fa-spinner fa-pulse fa-xs " aria-hidden="true"></i>
+</div>
+
+
+`);
+                $.ajaxSetup({headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}});
+                $.ajax({
+                    method: 'GET',
+                    url: 'https://app.perfectpay.com.br/notification/unread',
+                    data: {},
+                    success: function (data) {
+                        $('#notifications').html(data);
+                    },
+                    error: function (data) {
+                        $('#notifications').html('<div class="text-center text-wrap py-3 font-italic">Nenhuma notificação encontrada</div>');
+                    },
+                });
+            }
+        });
+
+        $(document).on('click', '.language', function () {
+            let lang = $(this).find('.language-code').html();
+            $.ajaxSetup({headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}});
+            $.ajax({
+                method: 'PATCH',
+                url: 'https://app.perfectpay.com.br/userlanguage/PPU15CGJX8W',
+                data: {'language_type_enum': parseInt(lang)},
+                success: function (data) {
+                    top.location.href = data.route;
+                    toastr["success"](data.success);
+                },
+                error: function (data) {
+                    toastr["error"](data.error);
+                },
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            // method to uncollapse item when child inside is active
+            var parentUl = $('#sidebar').find('.active').parent().parent();
+            if (parentUl.hasClass('collapse')) {
+                parentUl.siblings('a').removeClass('collapsed');
+                parentUl.addClass('show');
+            }
+
+            $(document).on('click', '.sidebar-item:not(.dropdown-toggle), .sidebar-collapse li a', function (event) {
+                const isTargetBlank = event.currentTarget.getAttribute('target') == '_blank';
+
+                if (!event.ctrlKey && !event.shiftKey && !isTargetBlank) {
+                    payLoading();
+                }
+            });
+
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            // definindo prioridade de inicializacao de cada chamada ajax
+            getSaleResume();
+            // duas abaixo retiradas para acelerar carregamento painel
+            // setTimeout(getProductRanking(), 100);
+            // setTimeout(getMessages(), 150);
+        });
+
+        //funcao que monta o sales resume que é plotado pela blade
+        // Painel\Home\Partials\Resume.blade.php
+        function getSaleResume() {
+            $.ajax({
+                headers: {'X-CSRF-TOKEN': 'Tw2wrVTX7e09eLTzzzkF5z5MZcqLCCzYNctMl3W8'},
+                method: 'GET',
+                url: 'https://app.perfectpay.com.br/salesReport',
+                success: function (res) {
+                    $('#rowCharts').html(res['chartView']);
+                    chartCall();
+                    delete res.chartView;
+                    $.each(res, function (key, value) {
+                        $("#" + key).html(value);
+                    });
+                    $('.show-resume, .load-resume').toggleClass('d-none');
+                    $('#showData, .btnGraphShow').removeAttr('disabled');
+                },
+                error: function (data) {
+                    toastr['error']('Não foi possível carregar os gráficos');
+                }
+            });
+        }
+
+        //funcao que monta as shared messages que é plotado pela blade
+        // Painel\Home\Partials\QuickAccess.blade.php
+        function getMessages() {
+
+            $.ajaxSetup({
+                headers: {'X-CSRF-TOKEN': 'Tw2wrVTX7e09eLTzzzkF5z5MZcqLCCzYNctMl3W8'},
+                method: 'GET',
+                url: 'https://app.perfectpay.com.br/ajaxDashboard/PartialMessagesView'
+            });
+            $.ajax({
+                success: function (data) {
+                    if (data) {
+                        $('.include-messages-blade').html(data);
+                    }
+                },
+                error: function (err) {
+                    toastr["error"]("<b>ERRO: </b><br> Não foi possível carregar as mensagens");
+                    // tiro essa mensagem? Não quer dizer que não tem mensagens, mas sim que teve um erro no proceso
+                }
+            });
+        }
+        //funcao que monta as o ranking de produtos, é plotada pela blade
+        // Painel\HomeUserContent.blade.php
+        function getProductRanking() {
+            $.ajaxSetup({
+                headers: {'X-CSRF-TOKEN': 'Tw2wrVTX7e09eLTzzzkF5z5MZcqLCCzYNctMl3W8'},
+                method: 'GET',
+                url: 'https://app.perfectpay.com.br/ajaxDashboard/StatisticForProducts'
+            });
+            $.ajax({
+                success: function (data) {
+                    data.forEach(item => {
+                        html = $('<li id="productStatistics-item" class="list-group-item d-flex justify-content-between align-items-center px-0">' +
+                            '<h6 class="text-dark font-weight-normal mb-0">' + item.name + '</h6>' +
+                            '</li>')
+                        if (item.points) {
+                            htmlPoints = $('<h6 class="text-secondary font-weight-600 mb-0">' + (item.points_random == 1 ? 0 : item.points) + '</h6>')
+                            htmlPoints.appendTo(html)
+                        }
+                        // append para adicionar no final, logo mantendo o anterior
+                        $('#productsRanking').append(html)
+                    })
+                    $('.load-resume-productRanking').remove();
+                },
+                error: function (err) {
+                    toastr["error"]("<b>ERRO: </b><br> Não foi possível carregar o ranking de produtos");
+                }
+            });
+        }
+
+        $('#collapseProductRanking').on('show.bs.collapse', function () {
+            $('#collapseSubtitle').text('Clique aqui para recolher');
+        });
+
+        $('#collapseProductRanking').on('hide.bs.collapse', function () {
+            $('#collapseSubtitle').text('Clique aqui para expandir');
+        });
+
+        $('.btnShare').on('click', function () {
+            let type = $(this).data('type');
+            let message = $('#' + $(this).data('message')).text().trim();
+
+            switch (type) {
+                case 'whatsapp':
+                    message +=
+                        ' Utilizando o Checkout da PerfectPay. https://www.perfectpay.com.br #SomosTodosPerfect #PerfectPay';
+                    window.open('https://api.whatsapp.com/send?text=' + encodeURI(message));
+                    break;
+                case 'twitter':
+                    message += ' Utilizando o Checkout da PerfectPay. #SomosTodosPerfect #PerfectPay';
+                    window.open('https://twitter.com/intent/tweet?url=https://perfectpay.com.br&text=' + encodeURI(
+                        message) + '&via=PerfectPay&hashtags=SomosTodosPerfect,PerfectPay');
+                    break;
+                default:
+                    return false;
+            }
+        });
+
+        function messageErrorCard(elementId) {
+            $(elementId).html('<div class="card p-3 mb-2 bg-info" style="background: #1C92BC">' +
+                '<h4>Ocorreu um erro e não foi possível carregar estes dados</h4>' +
+                '<h5>Tente novamente mais tarde, ou entre em contato com o suporte</h5>' +
+                '</div>')
+        }
+
+        $(window).on('load', function () {
+            var campaignId = [];
+            $('.campaigns').each(function () {
+                campaignId.push(this.id);
+                $.each(campaignId, function (i, val) {
+                    $('#' + String(val)).modal('show')
+                })
+            })
+        });
+    </script>
+
+<script type="text/javascript">
+    
+    $(document).ready(function () {
+        $("img").on("error", function () {
+            $(this).attr('src', 'https://app.perfectpay.com.br/img/default/image.svg');
+        });
+            });
+    // Desabilita a opcão de voltar na página anterior, evita varios erros de duplicidade
+    window.history.pushState(null, "", window.location.href);
+    window.onpopstate = function () {
+        window.history.pushState(null, "", window.location.href);
+    };
+
+    $('#acceptTerm').change(function () {
+        if ($(this).is(':checked')) {
+            $('#btnAccept').removeAttr('disabled');
+        } else {
+            $('#btnAccept').attr('disabled', true);
+        }
+    });
+
+    window.Laravel = '{"csrfToken":"Tw2wrVTX7e09eLTzzzkF5z5MZcqLCCzYNctMl3W8"}';
+    $('body').on('xhr.dt', function (e, settings, data, xhr) {
+        if (typeof phpdebugbar != "undefined") {
+            if (xhr.getAllResponseHeaders()) {
+                phpdebugbar.ajaxHandler.handle(xhr);
+            }
+        }
+    });
+    (function (w, d, s, l, i) {
+w[l] = w[l] || [];
+w[l].push({
+'gtm.start':
+new Date().getTime(), event: 'gtm.js'
+});
+let f = d.getElementsByTagName(s)[0],
+j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+j.async = true;
+j.src =
+'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-MB4F7P6');    (function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        let forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        let validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                form.classList.add('was-validated');
+                if (form.checkValidity()) {
+                    form.querySelector('button[type="submit"]').classList.add('btn-loading');
+                    payLoading();
+                    event.target.submit();
+                }
+            }, false);
+        });
+
+        
+        $.ajaxSetup({
+            statusCode: {
+                401: function (xhr) {
+                    document.location.reload(true);
+                }
+            }
+        });
+        const el = document.createElement('pwa-update');
+        document.body.appendChild(el);
+    })();
+
+    $(document).on('click', '.clickTelegram', function () {
+        $.ajaxSetup({headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}});
+        $.ajax({
+            method: 'PUT',
+            url: 'https://app.perfectpay.com.br/account/ajaxConfig',
+            data: {'field': 'show_telegram_flag', 'value': 0},
+            success: function (data) {
+                toastr(data.message);
+            }
+        });
+    });
+</script>
+<script type="module" src="./PerfectPay __ Plataforma do empreendedor digital_files/pwaupdate.js.download"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        const el = document.createElement('pwa-update');
+        document.body.appendChild(el);
+    });
+</script>
+<script type="module" src="./PerfectPay __ Plataforma do empreendedor digital_files/pwabuilder-sw.js.download"></script>
+
+<pwa-update><template shadowrootmode="open"><!----><div><!----> <!----></div><!----></template></pwa-update><script type="text/javascript" id="">!function(b,d,f){function e(){var c=d.getElementsByTagName("script")[0],a=d.createElement("script");a.type="text/javascript";a.async=!0;a.src="https://beacon-v2.helpscout.net";c.parentNode.insertBefore(a,c)}if(b.Beacon=f=function(c,a,g){b.Beacon.readyQueue.push({method:c,options:a,data:g})},f.readyQueue=[],"complete"===d.readyState)return e();b.attachEvent?b.attachEvent("onload",e):b.addEventListener("load",e,!1)}(window,document,window.Beacon||function(){});</script>
+<script type="text/javascript" id="">window.Beacon("init","4fbfb3b3-a039-40f8-9316-bbf77d6ac773");</script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","155781366233012");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=155781366233012&amp;ev=PageView&amp;noscript=1"></noscript>
+
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","598895344024995");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=598895344024995&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<script type="text/javascript" id="" src="./PerfectPay __ Plataforma do empreendedor digital_files/js(1)"></script>
+<script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","AW-11003299820");</script><script type="text/javascript" async="" src="./PerfectPay __ Plataforma do empreendedor digital_files/f.txt"></script><pwa-update><template shadowrootmode="open"><!----><div><!----> <!----></div><!----></template></pwa-update><div id="beacon-container"><div class="hsds-beacon"><div class="Beacon"><div class="BeaconFabButtonFrame" style="border-radius: 55px; height: 55px; position: fixed; transform: scale(1); width: 163px; z-index: 1049; --pulse-background: undefined; --pulse-bottom-offset: -97.5px; --pulse-right-offset: -43.5px;"><style>.BeaconFabButtonFrame {
+  border: none;
+  bottom: 40px;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  right: 40px;
+  top: auto;
+  transition: box-shadow 250ms ease, opacity 0.4s ease, scale 1000ms ease-in-out,
+    transform 0.2s ease-in-out;
+}
+
+.BeaconFabButtonFrame:active {
+    box-shadow: none;
+  }
+
+.BeaconFabButtonFrame iframe {
+    border: none;
+    height: 100%;
+    width: 100%;
+    color-scheme: light !important;
+  }
+
+@media (max-height: 740px) {
+
+.BeaconFabButtonFrame {
+    bottom: 10px;
+    right: 20px;
+}
+  }
+
+@supports (--css: variables) {
+  .BeaconFabButtonFrame.has-pulse-animation::before {
+    animation: puff-out-center 2s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+    animation-delay: 0.2s;
+    background-color: var(--pulse-background);
+    border-radius: 250px;
+    bottom: var(--pulse-bottom-offset);
+    content: '';
+    height: 250px;
+    opacity: 1;
+    pointer-events: none;
+    position: absolute;
+    right: var(--pulse-right-offset);
+    width: 250px;
+    will-change: transform;
+    z-index: -1;
+  }
+
+  @keyframes puff-out-center {
+    0% {
+      transform: scale(0.2);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+}
+
+.BeaconFabButtonFrame--left {
+  left: 40px;
+  right: initial;
+}
+
+@media (max-height: 740px) {
+
+.BeaconFabButtonFrame--left {
+    left: 20px;
+    right: initial;
+}
+  }
+</style><iframe id="" data-cy="FrameComponent" aria-label="Toggle Customer Support" src="./PerfectPay __ Plataforma do empreendedor digital_files/saved_resource.html"></iframe></div></div></div></div><div id="chart-tooltip" class="popover bs-popover-top" role="tooltip" style="top: 940.344px; left: 825.19px; display: none; z-index: 100; pointer-events: none;"><div class="arrow" style="left: 47%; transform: translateX(-50%)"></div><h3 class="popover-header text-center">04/05/2024</h3><div class="popover-body d-flex align-items-center justify-content-center">R$ 0,00</div></div></body></html>
